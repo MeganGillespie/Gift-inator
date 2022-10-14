@@ -1,0 +1,323 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+
+:root {
+  --colour1: #02c5f0;
+  --colour2: #037fa9;
+  --colour3: #fdd612;
+  --colour4: #fff2d5;
+  --colour5: #f1562b;
+  box-sizing: border-box;
+}
+
+/*############################*/
+/*     General Page Setup     */
+/*############################*/
+
+h1 {
+  color: var(--colour3);
+  font-family: "Electrolize", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.6em;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+p {
+  margin: 0.5em 0em;
+}
+
+small {
+  font-size: 0.8em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+header,
+footer,
+main {
+  padding: 1em;
+}
+
+/*#########################*/
+/*     Header Styling      */
+/*#########################*/
+header {
+  align-items: center;
+  background-color: var(--colour2);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+header > i {
+  font-size: 2em;
+  margin: 0em 0.5em;
+  color: var(--colour3);
+}
+
+header > button {
+  margin-left: auto;
+}
+
+/*#############################*/
+/*     Navigation Styling      */
+/*#############################*/
+nav {
+  flex: 2 2 0;
+  max-width: 20em;
+  padding: 1em;
+  text-align: center;
+}
+
+nav > a {
+  display: block;
+  padding: 0.25em 0em;
+  width: 100%;
+}
+
+/*#######################*/
+/*     Main Styling      */
+/*#######################*/
+main {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 2em 0em;
+}
+
+.main-content {
+  flex: 5 5 0;
+  padding: 1em;
+  min-height: 48.4vh;
+}
+
+/*#########################*/
+/*     Footer Styling      */
+/*#########################*/
+
+footer {
+  align-items: center;
+  background-color: var(--colour2);
+  color: var(--colour3);
+  text-align: center;
+}
+
+/*######################*/
+/*     Form Styling     */
+/*######################*/
+form {
+  margin: 0em auto;
+  max-width: 500px;
+}
+
+form > div {
+  margin: 1em 0em;
+}
+
+.form-item.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.form-item.row {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+label {
+  border: 2px solid white;
+  display: inline-block;
+  padding: 0.25em 2em 0.25em 0em;
+}
+
+input {
+  border: 2px solid var(--colour1);
+  border-radius: 0.5em;
+  padding: 0.25em;
+}
+
+input:focus {
+  border: 2px solid var(--colour2);
+}
+
+select {
+  border: 2px solid var(--colour1);
+  border-radius: 0.5em;
+  padding: 0.25em;
+}
+
+select:focus {
+  border: 2px solid var(--colour2);
+}
+
+textarea {
+  border: 2px solid var(--colour1);
+  border-radius: 0.5em;
+  padding: 0.25em;
+}
+
+textarea:focus {
+  border: 2px solid var(--colour2);
+}
+
+button {
+  background-color: var(--colour1);
+  color: black;
+  border: 2px solid var(--colour1);
+  border-radius: 0.75em;
+  font-weight: bold;
+  margin: 0em 0.25em;
+  padding: 0.25em 0.5em;
+}
+
+button:hover {
+  border: 2px solid var(--colour3);
+}
+
+.buttons {
+  align-items: center;
+  display: flex;
+  margin: 0em;
+}
+
+.buttons.center {
+  justify-content: center;
+  margin: 0em auto;
+}
+
+.buttons.left {
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.buttons > a,
+.buttons > h2,
+.buttons > h3 {
+  margin-right: auto;
+}
+
+button.inactive {
+  background-color: var(--colour2);
+  border: 2px solid var(--colour2);
+}
+
+button.inactive:hover {
+  border: 2px solid var(--colour2);
+}
+
+/* error messages */
+.error {
+  color: red;
+  display: inline-block;
+  padding: 0.5em;
+}
+
+.noerror {
+  display: none;
+}
+
+/*###############################*/
+/*     View List Styling         */
+/*###############################*/
+.list {
+  border-bottom: 2px solid var(--colour2);
+  display: flex;
+  padding: 1em 2em;
+}
+
+.list:last-of-type {
+  border-bottom: none;
+}
+
+.quantity {
+  background-color: var(--colour3);
+  color: black;
+  border: 2px solid var(--colour3);
+  border-radius: 0.75em;
+  font-weight: bold;
+  margin: 0em 0.25em 0.5em auto;
+  max-width: fit-content;
+  padding: 0.1em 0.5em;
+}
+
+.unactive {
+  color: grey;
+}
+
+.list h3 {
+  padding: 0.75em 0em;
+}
+
+.hidden {
+  display: none;
+}
+
+/*################################*/
+/*     Edit Pages Styling         */
+/*################################*/
+.input {
+  border: 2px solid var(--colour2);
+  border-radius: 0.5em;
+  margin: 1em auto;
+  max-width: 500px;
+  padding: 0.25em;
+}
+
+/*############################*/
+/*     Pop-up Styling         */
+/*############################*/
+.pop-up {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.pop-up-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

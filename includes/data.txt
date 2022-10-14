@@ -1,0 +1,5 @@
+<?php 
+ /* Connect to database */
+  require './includes/library.php';
+  $pdo = connectDB();
+?>
